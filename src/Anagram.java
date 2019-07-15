@@ -1,12 +1,31 @@
+import javax.sound.midi.Soundbank;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FilterReader;
 import java.lang.reflect.Array;
+import java.sql.SQLOutput;
 import java.util.*;
 
-public class Main {
+public class Anagram {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+        Anagram a = new Anagram();
+        List<String> lista = new ArrayList<>();
+        List<String> listaAnagrwmow = new ArrayList<>();
+
+        lista = a.wczytajPlik();
+        if (lista.size() == 0) {
+            System.out.println("Nie wczytano żadnych słów");
+        } else {
+            System.out.println(String.format("Wczytano %,d unikalnych słów", lista.size()));
+            listaAnagrwmow = a.znajdzAnagram(lista);
+            System.out.println(String.format("Znaleziono anagramów %,d", listaAnagrwmow.size()));
+
+            for (String s : listaAnagrwmow) {
+                System.out.println(s);
+            }
+        }
 
     }
 
@@ -50,6 +69,10 @@ public class Main {
                 }
             }
         }
+        System.out.println(String.format("\n\nLiczba wykonanych porównań %,d", totalComp));
+        Date dEnd = new Date();
+        long czas = (dEnd.getTime() - dStart.getTime()) / 1000;
+        System.out.println(String.format("Porównanie trwało %,d", czas));
         return list;
     }
 
