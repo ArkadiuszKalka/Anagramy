@@ -1,13 +1,33 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FilterReader;
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
+    }
+
+    public List<String> wczytajPlik() throws Exception {
+        List<String> listaSlow = new ArrayList<>();
+        Set<String> slowaSet = new HashSet<>();
+
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("anagram.txt"));
+        try {
+            String linia;
+            while ((linia = bufferedReader.readLine()) != null) {
+                if (!linia.equals("")) {
+                    slowaSet.add(linia);
+                }
+            }
+            bufferedReader.close();
+            listaSlow.addAll(slowaSet);
+        } catch (Exception e) {
+            System.out.printf("Bład odczytu pliku");
+        }
+        return listaSlow;
     }
 
     public List<String> znajdzAnagram(List<String> listaSlow) {
@@ -26,16 +46,12 @@ public class Main {
                     if ((x % 20) == 0) {
                         System.out.println(".");
                     }
-                list.add(str1+" - "+str2);
+                    list.add(str1 + " - " + str2);
                 }
-
-
             }
-
         }
-
+        return list;
     }
-
 
     public boolean porownajSlowa(String str1, String str2) {
 

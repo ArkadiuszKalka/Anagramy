@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cfdc873-3655-4be3-9630-0a7730dcb871" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,12 +105,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563184116603</updated>
       <workItem from="1563184121429" duration="558000" />
-      <workItem from="1563184843220" duration="1000000" />
+      <workItem from="1563184843220" duration="2084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1558000" />
+    <option name="totallyTimeSpent" value="2642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="803" extended-state="6" />
@@ -151,8 +152,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
